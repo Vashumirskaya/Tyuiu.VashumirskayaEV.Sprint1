@@ -25,23 +25,28 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task6.V1
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ :                                                       *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите значение x1:");
-            double x1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите значение y1:");
-            double y1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите значение x2:");
-            double x2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите значение y2:");
-            double y2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите символ и нажмите <Enter>.");
+            Console.WriteLine("Для завершения введите точку.");
+
+            while (true)
+            {
+                Console.WriteLine("->");
+                string input = Console.ReadLine();
+
+                if (input == ".")
+                {
+                    break;
+                }
 
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ :                                                             *");
-            Console.WriteLine("***************************************************************************");
 
-            int dist = ds.DistanceBetweenDots(x1, y1, x2, y2);
-            Console.WriteLine($"Расстояние между точками: {dist}");
+                Console.WriteLine("***************************************************************************");
+                Console.WriteLine("* РЕЗУЛЬТАТ :                                                             *");
+                Console.WriteLine("***************************************************************************");
 
+                string result = ds.SymbolCode(input);
+                Console.WriteLine(result);
+            }
             Console.ReadKey();
         }
     }
