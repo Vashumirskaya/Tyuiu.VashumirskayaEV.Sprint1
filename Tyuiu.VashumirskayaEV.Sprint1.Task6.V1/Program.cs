@@ -44,8 +44,8 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task6.V1
                 Console.WriteLine("* РЕЗУЛЬТАТ :                                                             *");
                 Console.WriteLine("***************************************************************************");
 
-                string result = ds.SymbolCode(input);
-                Console.WriteLine(result);
+                string code = ds.SymbolCode(input);
+                Console.WriteLine(code);
             }
             Console.ReadKey();
         }

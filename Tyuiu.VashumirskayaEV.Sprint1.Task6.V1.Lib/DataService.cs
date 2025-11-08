@@ -9,7 +9,7 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task6.V1.Lib
         {
             char symbol = value[0];
             int code = (int)symbol;
-            return $"Символ: {symbol} Код: {code}";
+            return code.ToString();
         }
     }
 }
