@@ -9,7 +9,7 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task3.V10.Lib
             number = Math.Round(number, 3);
             int rub = (int)number;
             int kop = (int)Math.Round((number - rub) * 100);
-            return $"{number} руб. - это {rub} руб. {kop:D2} коп.";
+            return $"{number.ToString().Replace(",",".")} руб. - это {rub} руб. {kop:D2} коп.";
         }
     }
 }
