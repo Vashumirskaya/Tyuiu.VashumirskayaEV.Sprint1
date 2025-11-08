@@ -7,7 +7,7 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task6.V1
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
+            
             Console.Title = "Спринт #1 | Выполнила: Вашумирская Е. В. | СМАРТб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
