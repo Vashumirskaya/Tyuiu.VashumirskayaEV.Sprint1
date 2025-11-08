@@ -30,7 +30,7 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task0.V7
 
             Console.WriteLine(ds.Calculate());
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

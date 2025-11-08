@@ -38,7 +38,7 @@ namespace Tyuiu.VashumirskayaEV.Sprint1.Task1.V24
 
             Console.WriteLine(ds.Calculate(x, y));
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
